@@ -1,0 +1,80 @@
+\documentclass{article}
+
+%\documentclass[aps,pra,notitlepage,amsmath,amssymb,letterpaper,12pt]{revtex4-1}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{titling}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+
+\epstopdfDeclareGraphicsRule{.gif}{png}{.png}{convert gif:#1 png:\OutputFile}
+\AppendGraphicsExtensions{.gif}
+
+%  Below define helpful commands to set up problem environments easily
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{solution}{\begin{proof}[Solution]}{\end{proof}}
+ 
+% --------------------------------------------------------------
+%                   Document Begins Here
+% --------------------------------------------------------------
+ 
+\begin{document}
+ 
+\title{definition of derivative of a function }
+\author{Jianhua Li}
+\date{\today}
+
+\maketitle
+
+\begin{abstract}
+Create a LaTeX file testlatex.tex (using the template in the info repository). In this file write an explanation of what the definition of the derivative $f'(x)$ of a function $f(x)$ means. Include both inline and numbered equations, as well as a proper title, abstract, and section headings. Find a suitable image to illustrate your definition online, and include it as a figure, with proper citation of the source.
+\end{abstract}
+
+
+
+%\section{Section Title Here} % Specify main sections this way
+
+\section{Definition}
+%The derivative of f(x) is defined as the limit:
+%\lim_{x\to\infty} f(x) $$= 2x 
+%https://apcalcnotebookarjw.wikispaces.com/Definition+of+the+derivative+of+a+function
+
+\begin{align}
+  %f(x) = x^{2}
+  f'(x_0) = \lim_{x\to x_0} \frac{f(x_0)-f(x)}{x_0-x}\\
+  f'(x) = \lim_{h\to\infty} \frac{f(x+h)-f(x)}{h} %it worked
+  %f'(x_0) = \lim_{x\to\x_0}\frac{f(x_0)-f(x)}{x_0-x}
+\end{align}
+
+%\begin{align}   
+	%f'(x_0) &=\lim_{x\to\x_0}\frac{f(x_0)-f(x)}{x_0-x}
+   %$$f'(x) &=\lim_{h\to\infty}f(x)\frac{f(x+h)-f(x)}{h}
+%\[
+%    \binom{n}{k} = \frac{n!}{k!(n-k)!}
+%\]
+%f(x) &= 2x^2-16x+35\\
+%f'(x) &= 2x+2\\
+%\[ \lim_{x \to +\infty} \frac{3x^2 +7x^3}{x^2 +5x^4} = 3.\] 
+
+%\end{align}
+% Use align environments for equations. The \\ is a newline character. The & is the alignment character.
+% Using align* or \nonumber on each line removes equation numbers
+
+Example Illustration:
+
+
+\begin{figure}[h!] % h forces the figure to be placed here, in the text
+  \includegraphics{250px-Lim-secant.png}  % if pdflatex is used, jpg, pdf, and png are permitted
+  \caption{A secant approaches a tangent when h approach to 0,Source https://en.wikipedia.org/wiki/Derivative}
+  \label{fig:tangent}
+\end{figure}
+
+This text should be below the figure unless \LaTeX  decides that a different layout works better.
+ 
+% Repeat as needed
+ 
+\end{document}
+
+
