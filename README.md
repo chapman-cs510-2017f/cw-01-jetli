@@ -1,6 +1,6 @@
 # CS510 CW 1
 
-**Author(s):** _\<your name(s)\>_
+**Author(s):** _\<Jianhua Li)\>_
 
 ## Specification
 
@@ -13,7 +13,9 @@ Complete the following exercises, saving your solutions in the indicated files.
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
 
-**CHANGEME**
+1. Pratice, Pratice, Practive is the only way to learn LaTex and Sage Math. 
+2. Always save previous work and samples for future reference, to save time. 
+3. Latex and Sage will be an great tool for our future study.
 
 ## Honor Pledge
 
@@ -21,7 +23,8 @@ I pledge that all the work in this repository is my own with only the following 
 
 * Content of starter files supplied by the instructor;
 * Code borrowed from another source, documented with correct attribution in the code and summarized here.
+Refer wiki for the illustration of derivative
 
 Signed,
 
-**YOURNAME**
+Jianhua Li
